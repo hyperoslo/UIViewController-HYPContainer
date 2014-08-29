@@ -1,3 +1,5 @@
+Safely add child view controllers.
+
 ```objc
 - (void)hyp_addViewController:(UIViewController *)controller;
 
