@@ -11,7 +11,7 @@
 
 - (void)hyp_addViewController:(UIViewController *)controller
 {
-    [self hyp_addViewController:controller inFrame:CGRectZero];
+    [self hyp_addViewController:controller inFrame:controller.view.frame];
 }
 
 - (void)hyp_addViewController:(UIViewController *)controller
@@ -19,10 +19,7 @@
 {
     [self addChildViewController:controller];
 
-    if (!CGRectIsEmpty(frame)) {
-        controller.view.frame = frame;
-    }
-
+    controller.view.frame = frame;
     [self.view addSubview:controller.view];
     [controller didMoveToParentViewController:self];
 }
