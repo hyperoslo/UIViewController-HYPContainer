@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   }
   s.author = { "Elvis Nuñez" => "elvis@hyper.no" }
   s.social_media_url = "http://twitter.com/hyperoslo"
-  s.platform = :ios, '6.0'
+  s.platform = :ios, '5.0'
   s.source = {
     :git => 'https://github.com/hyperoslo/UIViewController-HYPContainer.git',
     :tag => s.version.to_s
