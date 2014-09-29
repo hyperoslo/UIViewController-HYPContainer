@@ -19,7 +19,10 @@
 {
     [self addChildViewController:controller];
 
-    controller.view.frame = frame;
+    if (!CGRectEqualToRect(frame, controller.view.frame)) {
+        controller.view.frame = frame;
+    }
+
     [self.view addSubview:controller.view];
     [controller didMoveToParentViewController:self];
 }
