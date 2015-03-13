@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "UIViewController-HYPContainer"
-  s.version = "0.1"
+  s.version = "0.1.1"
   s.summary = "Safely add child view controllers"
   s.description = <<-DESC
                    * Safely add child view controllers
